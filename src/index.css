@@ -5,9 +5,82 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: url(.././public/bg-img.jpg);
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.title{
+  position: absolute;
+  margin-left: 80px;
+}
+
+.events-list-box{
+  background-color: rgb(238, 226, 159);
+  width: 400px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: rgb(195, 228, 118);
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto; 
+  height: 100%;
+  padding-top: 5px;
+}
+
+.event-item {
+  background-color: white;
+  margin: 2px;
+  height: 30px;
+  display: flex; 
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.event-item:hover {
+  cursor: pointer;
+  border-style: solid;
+  border-color: rgb(71, 95, 141);
+}
+
+.event-date {
+  margin-left: 10px;
+  width: 150px;
+}
+
+.event-name {
+  flex-grow: 1; 
+  overflow: hidden; 
+  text-overflow: ellipsis; 
+  white-space: nowrap; 
+}
+
+.event-arrow {
+  margin-left: 5px;
+  white-space: nowrap; 
+  margin-right: 10px;
+}
+
+.homepage-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.CalendarComponent {
+  grid-column: 1;
+}
+
+.ListSideBar {
+  grid-column: 2;
+  margin-left: 50px;
+}
+
+.react-calendar {
+  width: 550px !important;
+  margin-top: 180px;
+  margin-left: 80px;
 }
